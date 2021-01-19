@@ -1,0 +1,4 @@
+<p>{{question}}</p>
+<p *ngIf="showAnswer">{{answer}}</p>
+<button class="btn btn-primary mt-5" (click)="showAnswer=!showAnswer">Tell Me</button>
+<button class="btn btn-primary mt-5" (click)="removeJoke()">Delete</button>

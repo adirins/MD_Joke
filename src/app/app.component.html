@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Create a joke!</h1>
+  <app-joke-editor (addJoke)="addFunnyJoke()"></app-joke-editor>
+  <div class="row">
+    <br>
+    <app-joke-card *ngFor="let joke of jokes; let i= index" [question]="joke.question" [answer]="joke.answer" (jokeDeletion)="removeJoke()"></app-joke-card>
+  </div>
+  {{jokes.length}}
+</div>
